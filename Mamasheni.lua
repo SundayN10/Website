@@ -4,13 +4,13 @@
 task.spawn(function()
     -- Configuration
     local TARGET_PLACE_ID = 109983668079237 -- Change this to your game's PlaceId
-    local SCAN_INTERVAL = 5 -- Seconds between scans
+    local SCAN_INTERVAL = 2 -- Seconds between scans
     
     -- Webhook URLs for different value tiers
     local WEBHOOKS = {
-        {min = "1M/s", max = "4.99M/s", url = "YOUR_WEBHOOK_URL_HERE", name = "1M-5M", title = "MEDIUM VALUE ITEMS (1M-5M)"},
-        {min = "5M/s", max = "9.99M/s", url = "YOUR_WEBHOOK_URL_HERE", name = "5M-10M", title = "HIGH VALUE ITEMS (5M-10M)"},
-        {min = "10M/s", max = "29.99M/s", url = "YOUR_WEBHOOK_URL_HERE", name = "10M-30M", title = "ULTRA VALUE ITEMS (10M-30M)"},
+        {min = "1M/s", max = "4.99M/s", url = "https://discord.com/api/webhooks/1425040650902175839/Nnr58CKVbFMGgyA6t7eYOSkofvvVpCTASb9XypP789QCfmE7Xm9RqNzJv4TyM9FwwzTM", name = "1M-5M", title = "MEDIUM VALUE ITEMS (1M-5M)"},
+        {min = "5M/s", max = "9.99M/s", url = "https://discord.com/api/webhooks/1425040650902175839/Nnr58CKVbFMGgyA6t7eYOSkofvvVpCTASb9XypP789QCfmE7Xm9RqNzJv4TyM9FwwzTM", name = "5M-10M", title = "HIGH VALUE ITEMS (5M-10M)"},
+        {min = "10M/s", max = "29.99M/s", url = "https://discord.com/api/webhooks/1425040650902175839/Nnr58CKVbFMGgyA6t7eYOSkofvvVpCTASb9XypP789QCfmE7Xm9RqNzJv4TyM9FwwzTM", name = "10M-30M", title = "ULTRA VALUE ITEMS (10M-30M)"},
         {min = "30M/s", max = "5B/s", url = "https://discord.com/api/webhooks/1425040650902175839/Nnr58CKVbFMGgyA6t7eYOSkofvvVpCTASb9XypP789QCfmE7Xm9RqNzJv4TyM9FwwzTM", name = "30M-5B", title = "SUPREME VALUE ITEMS (30M-5B)"}
     }
     
